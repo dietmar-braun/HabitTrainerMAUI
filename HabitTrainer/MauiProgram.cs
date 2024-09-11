@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using MudBlazor.Services;
 
 namespace HabitTrainer
 {
@@ -13,6 +14,9 @@ namespace HabitTrainer
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
+
+            // Add MudBlazor services to app
+            builder.Services.AddMudServices();
 
             builder.Services.AddMauiBlazorWebView();
 

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HabitTrainer", "HabitTrainer\HabitTrainer.csproj", "{7731C073-D734-4E30-8217-D38EC61B538B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HabitTrainer.Tests.Unit", "HabitTrainer.Tests.Unit\HabitTrainer.Tests.Unit.csproj", "{DAD80415-4E02-4749-930E-43BA99497198}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HabitTrainer.Tests.Unit", "HabitTrainer.Tests.Unit\HabitTrainer.Tests.Unit.csproj", "{DAD80415-4E02-4749-930E-43BA99497198}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

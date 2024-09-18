@@ -1,0 +1,11 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="RunTailwindOnBuild" BeforeTargets="BeforeBuild" Condition="'$(Configuration)' == 'Debug'">
+    <!-- Run TailwindCSS build with watch in Debug mode -->
+    <Exec Command="npx tailwindcss -i Styles/input.css -o wwwroot/css/app.min.css --watch" />
+  </Target>
+
+  <Target Name="RunTailwindOnBuildRelease" BeforeTargets="BeforeBuild" Condition="'$(Configuration)' == 'Release'">
+    <!-- Run TailwindCSS build without watch in Release mode -->
+    <Exec Command="npx tailwindcss -i Styles/input.css -o wwwroot/css/app.min.css" />
+  </Target>
+</Project>

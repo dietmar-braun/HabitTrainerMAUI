@@ -69,5 +69,5 @@
     <ItemGroup>
       <Folder Include="Styles\" />
     </ItemGroup>
-
+    <Import Project="TailwindBuild.targets" />
 </Project>

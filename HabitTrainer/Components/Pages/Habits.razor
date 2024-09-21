@@ -6,6 +6,13 @@
 <p role="status">Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<MudButton OnClick=@IncrementCount ><MudIcon Icon="@Icons.Material.Rounded.Add" /></MudButton>
+
+<MudTabs Elevation="4" Rounded="true" Centered="true" Color="@Color.Primary">
+    <MudTabPanel Text="Daily" />
+    <MudTabPanel Text="ToDos" />
+    <MudTabPanel Text="Birthdays" />
+</MudTabs>
 
 @code {
     private int currentCount = 0;
